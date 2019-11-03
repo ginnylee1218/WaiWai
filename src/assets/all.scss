@@ -1,0 +1,10 @@
+@import "~bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "~bootstrap/scss/bootstrap";
+// ~ 為/node_modules/ 的縮寫
+
+//all
+@import "./layout";
+@import "./fontello";
+//back
+@import "./dashboard";
