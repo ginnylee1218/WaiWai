@@ -56,11 +56,6 @@
                                 
                             </div>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" @click.prevent="openLoginModal">
-                            <i class="fas fa-users-cog i-scale"></i>
-                            </a>
-                        </li>
                     </ul>
                     <button class="navbar-toggler " type="button" data-toggle="collapse" @click="navShow = ! navShow">
                         <span><i class="fas" :class="[navShow? 'fa-times':'fa-bars']"></i></span>
@@ -203,8 +198,11 @@
             <div class="container">
                 <div class="row">
                     <div class="footer__about pl-3 col-12 col-md-4">
-                        <h4>About Wai Wai</h4>
-                        <p>Lorem ipsum odit obcaecati. Minima amet corporis ab, voluptatibus fuga ex tenetur voluptate aspernatur itaque, corrupti alias deserunt dolorum laudantium dolorem provident.</p>
+                        <h4>About</h4>
+                        <p>
+                        WaiWai is the best kids clothes online shop in this world.<br/>
+                        We guaranteed to provide the most comfortable clothes to your kids, this is not only the slogan of our brand but also our responsibility.<br/>
+                        </p>
                     </div>
                     <div class="footer__contact pl-3 my-3 my-md-0 col-12 col-md-4">
                     
@@ -225,6 +223,9 @@
                     <div class="footer__copyright col-12 mt-4 text-center">
                         <span>COPYRIGHT@2019&nbsp; BY GINNY </span><br>
                         <span>(資料來源來自網路，僅個人練習用，非商業/營利網站)</span>
+                        <a class="pl-3" @click.prevent="openLoginModal">
+                            <i class="fas fa-users-cog fa-sm"></i>
+                        </a> 
                     </div>
                 </div>
                 

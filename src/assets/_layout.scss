@@ -1,3 +1,9 @@
+$color-darktheme:#af715b;
+$color-bgdarktheme:#af715bde;
+$color-darksalmon: darksalmon;
+$color-darkred: darkred;
+$special-font-family:'EB Garamond', 'Monotype Garamond', serif;
+
 ul {
   margin: 0;
   padding-left: 0;
@@ -12,7 +18,9 @@ a {
     transform: scale(2);
 }
 
-  
+.vld-overlay.is-full-page {
+    z-index: 9999;
+}
 
 nav {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
@@ -32,11 +40,11 @@ nav {
         }
         .navbar-nav{
             .nav-link{
-                color: #af715b;
+                color: $color-darktheme;
                 cursor: pointer;
                 position: relative;
                 &.active, &:hover, &:focus{
-                    color: darkred;  
+                    color: $color-darkred;  
                 }
                 &.active::before{
                     font-family: "Font Awesome 5 Free";
@@ -52,10 +60,10 @@ nav {
         }
         .navbar-nav.sub-nav{
             .nav-link{
-                color: #af715b;
+                color: $color-darktheme;
                 cursor: pointer;
                 &.active, &:hover, &:focus{
-                    color: #af715b; 
+                    color: $color-darktheme; 
                 }
             }
             li > a{
@@ -163,7 +171,7 @@ nav {
             position: relative;
             color:tan;
             &.active{
-                color: darkred;
+                color: $color-darkred;
             }
             &.active::before{
                 font-family: "Font Awesome 5 Free";
@@ -206,8 +214,11 @@ nav {
 }
 .footer{
     padding: 40px 0;
-    background-color: #af715bde;
+    background-color: $color-bgdarktheme;
     color: #fff;
+    a{
+        cursor: pointer;
+    }
     .social-media a {
         display: inline-block;
         margin: 10px;
@@ -295,7 +306,7 @@ nav {
     height: 95px;
     border-radius: 50%;
     z-index: 9;
-    background: darksalmon;
+    background: $color-darksalmon;
     padding: 15px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
@@ -312,14 +323,14 @@ nav {
 .modal-login .btn {
     color: #fff;
     border-radius: 4px;
-    background: darksalmon;
+    background: $color-darksalmon;
     text-decoration: none;
     transition: all 0.4s;
     line-height: normal;
     border: none;
 }
 .modal-login .btn:hover, .modal-login .btn:focus {
-    background: #af715b;
+    background: $color-darktheme;
     outline: none;
 }
 
@@ -388,8 +399,17 @@ nav {
                     justify-content: center;
                     padding-top: 0;
                 }
+                @media (max-width: 576px){
+                    width: 100%;
+                }
                 @media (max-width: 320px){
                     padding: 10px 20px;
+                }
+                h2,p{
+                    font-family: $special-font-family;
+                }
+                p{
+                    font-size: 20px;
                 }
                 &.left{
                     left: 0;
@@ -437,10 +457,15 @@ nav {
             background-image: url('./assets/img/parallaxBgGirl.jpg');
         }
         .intro{
+            h2,p{
+                font-family: $special-font-family;
+            }
             p{
+                font-size: 18px;
                 width: 300px;
                 @media (max-width: 320px) {
                     width: 200px;
+                    font-size: 16px;
                 }
             }
         }
@@ -465,7 +490,7 @@ nav {
                 width: 100%;
                 padding: 20px 0;
                 h2,h5{
-                    font-family: 'EB Garamond', 'Monotype Garamond', serif;
+                    font-family: $special-font-family;
                 }
                 @media (max-width: 576px){
                     h2{

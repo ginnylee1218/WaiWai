@@ -1,3 +1,8 @@
+$color-darktheme:#af715b;
+$color-tan: tan;
+$color-darkred: darkred;
+$color-textBlack: #282929;
+
 #girls,#boys,#accessories{
     max-width: 1780px;
     margin: 0 auto;
@@ -8,11 +13,11 @@
         display: inline-block;
         line-height: 30px;
         letter-spacing: .6px;
-        color: tan;
+        color: $color-tan;
         white-space: nowrap;
         font-weight: 700;
         &.active{
-            color: darkred;
+            color: $color-darkred;
         }
     }
 }
@@ -30,7 +35,7 @@
         padding: 30px;
         margin-bottom: 0;
         background: rgba(255,255,255,0.8);
-        color: tan;
+        color: $color-tan;
         z-index: 100;
     }
     .swiper-slide {
@@ -114,7 +119,7 @@
 .item__info {
     text-align: center;
     margin: 11px 0 42px;
-    color: #282929;
+    color: $color-textBlack;
     font-size: 12px;
 }
 .item__size {
@@ -127,11 +132,11 @@
     a {
         display: block;
         border: 1px solid #bababa;
-        color: #282929;
+        color: $color-textBlack;
         transition: border linear .2s,box-shadow linear .5s;
         &.active{
-            border-color: tan;
-            box-shadow: 0px 0px 5px tan;
+            border-color: $color-tan;
+            box-shadow: 0px 0px 5px $color-tan;
         }
     }
     span {
@@ -217,10 +222,10 @@
             margin-top: 20px;
         }
         h5{
-            color: #af715b;
+            color: $color-darktheme;
         }
         .intro{
-            color:tan;
+            color:$color-tan;
             font-size: 12px;
         }
     }

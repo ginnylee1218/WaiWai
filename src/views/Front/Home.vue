@@ -29,8 +29,8 @@
         <swiper-slide class="slide-1">
           <div class="content left">
             <div class="intro mb-4">
-              <h5>GET COZY IN THIS WINTER</h5>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <h2>Get Cozy in this Winter</h2>
+              <p>All-new and ready for everything</p>
             </div>
             <div class="d-flex">
               <button class="btn btn-sm btn-outline-darktheme mr-3" @click.prevent="onClickCategory('gNew', 'girls')">SHOP GIRLS</button>
@@ -41,8 +41,8 @@
         <swiper-slide class="slide-2">
           <div class="content right">
             <div class="intro mb-4">
-              <h5>GET COZY IN THIS WINTER</h5>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <h2>Get Cozy in this Winter</h2>
+              <p>All-new and ready for everything</p>
             </div>
             <div class="d-flex">
               <button class="btn btn-sm btn-outline-darktheme mr-3" @click.prevent="onClickCategory('gNew', 'girls')">SHOP GIRLS</button>
@@ -53,8 +53,8 @@
         <swiper-slide class="slide-3">
           <div class="content left">
             <div class="intro mb-4">
-              <h5>GET COZY IN THIS WINTER</h5>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <h2>Get Cozy in this Winter</h2>
+              <p>All-new and ready for everything</p>
             </div>
             <div class="d-flex">
               <button class="btn btn-sm btn-outline-darktheme mr-3" @click.prevent="onClickCategory('gNew', 'girls')">SHOP GIRLS</button>
@@ -67,8 +67,10 @@
     </div>    
     <div class="full-parallax d-flex align-items-center justify-content-end p-5 bg-girl">
       <div class="intro text-white">
-        <h2>BEAUTY AND LOVELY</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis non exercitationem recusandae, corrupti quae</p>
+        <h2>Beauty and Lovely</h2>
+        <p>Sustainable Fashion With Unisex Looks.<br/>
+          Check out cute kids clothes and sets from WaiWai Right Now.
+        </p>
         <button class="btn btn-sm btn-white btn-block" @click.prevent="onClickCategory('gDresses', 'girls')">SHOP GIRLS</button>
       </div>
     </div>
@@ -97,8 +99,8 @@
    
     <div class="full-parallax d-flex align-items-center justify-content-start p-5 bg-boy">
       <div class="intro text-white">
-        <h2>HANDSOME AND CHARMING</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis non exercitationem recusandae, corrupti quae</p>
+        <h2>Handsome and Charming</h2>
+        <p>New season, new sweaters, new adventures. The best chance to suit up your boy. Let’s do this right now!</p>
         <button class="btn btn-sm btn-white btn-block" @click.prevent="onClickCategory('bSweaters', 'boys')">SHOP BOYS</button>
       </div>
     </div>
